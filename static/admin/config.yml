@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: steff-personal-blog
+  repo: sbahamon/steff-personal-blog
 
 media_folder: static/assets
 public_folder: assets
