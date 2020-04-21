@@ -1,5 +1,5 @@
 backend:
-  name: steff-personal-blog
+  name: github
   repo: sbahamon/steff-personal-blog
 
 media_folder: static/assets
