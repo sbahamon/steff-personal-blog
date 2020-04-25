@@ -3,6 +3,8 @@ backend:
   repo: sbahamon/steff-personal-blog
   # name: test-repo
 
+publish_mode: editorial_workflow
+
 media_folder: static/assets
 public_folder: assets
 
@@ -17,23 +19,23 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
-  - name: project
-    label: Projects
-    folder: content/project
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
-  - name: art
-    label: Art
-    folder: content/art
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
+  # - name: project
+  #   label: Projects
+  #   folder: content/project
+  #   create: true
+  #   fields:
+  #     - { name: path, label: Path }
+  #     - { name: date, label: Date, widget: date }
+  #     - { name: title, label: Title }
+  #     - { name: description, label: Description }
+  #     - { name: body, label: Body, widget: markdown }
+  # - name: art
+  #   label: Art
+  #   folder: content/art
+  #   create: true
+  #   fields:
+  #     - { name: path, label: Path }
+  #     - { name: date, label: Date, widget: date }
+  #     - { name: title, label: Title }
+  #     - { name: description, label: Description }
+  #     - { name: body, label: Body, widget: markdown }
