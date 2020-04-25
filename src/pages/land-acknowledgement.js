@@ -5,12 +5,13 @@ import SEO from "../components/seo"
 
 class Land extends React.Component {
   render() {
-    const siteTitle = "Steffany Bahamon's Personal Website"
-
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
+    
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Home"
+          title="Lank Acknowledgement"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <h1>
@@ -26,3 +27,28 @@ class Land extends React.Component {
 }
 
 export default Land
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`

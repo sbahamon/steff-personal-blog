@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Steffany Bahamon's website`,
+    title: `Steffany Bahamon's Personal Website`,
     author: `Steffany Bahamon`,
     description: `Projects, art, and writings by Steffany Bahamon`,
     siteUrl: `https://steffb.netlify.app//`,
