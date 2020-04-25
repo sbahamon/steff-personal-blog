@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: sbahamon/steff-personal-blog
+  # name: test-repo
 
 media_folder: static/assets
 public_folder: assets
@@ -9,6 +10,26 @@ collections:
   - name: blog
     label: Blog
     folder: content/blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+  - name: project
+    label: Projects
+    folder: content/project
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+  - name: art
+    label: Art
+    folder: content/art
     create: true
     fields:
       - { name: path, label: Path }

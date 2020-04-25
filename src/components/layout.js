@@ -46,7 +46,7 @@ class Layout extends React.Component {
               textDecoration: `none`,
               color: `inherit`,
             }}
-            to={`/blog/`}
+            to={`/`}
           >
             {title}
           </Link>
@@ -69,7 +69,7 @@ class Layout extends React.Component {
         <Footer>
           © {new Date().getFullYear()}, Built with ❤️ and
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a> in <a href="/land-acknowledgement">Chicago</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a> in <Link to="/land-acknowledgement">Chicago</Link>
         </Footer>
       </Wrapper>
     )

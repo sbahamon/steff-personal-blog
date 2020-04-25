@@ -29,10 +29,10 @@ class IndexPage extends React.Component {
         <Link to="/blog/">
           <Button marginTop="35px">Blogs</Button>
         </Link>
-        <Link to="/projects/">
+        <Link to="/project/">
           <Button marginTop="35px">Projects</Button>
         </Link>
-        <Link to="/Art/">
+        <Link to="/art/">
           <Button marginTop="35px">Art</Button>
         </Link>
         <Link to="/about-me/">

@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    // edit below
     title: `Steffany Bahamon's website`,
     author: `Steffany Bahamon`,
     description: `Projects, art, and writings by Steffany Bahamon`,
