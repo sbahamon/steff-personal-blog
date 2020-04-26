@@ -2,27 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+import NavBar from "../components/navbar"
 import { rhythm } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    let header
-
-    header = (
-      <h3>
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
+    const { children } = this.props
 
     return (
       <Wrapper>
@@ -34,7 +19,7 @@ class Layout extends React.Component {
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
-          <header>{header}</header>
+          <NavBar></NavBar>
           <main>{children}</main>
         </div>
         <Footer>
