@@ -1,6 +1,12 @@
 import Typography from "typography"
 import fairyGatesTheme from 'typography-theme-fairy-gates'
 
+fairyGatesTheme.overrideThemeStyles = ( options) => ({
+  a: {
+    backgroundImage: "none",
+  }
+})
+
 const typography = new Typography(fairyGatesTheme)
 
 // Hot reload typography in development.

@@ -2,7 +2,6 @@ import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 
 import styled from "styled-components"
-
 import { rhythm } from "../utils/typography"
 
 export default () => (
@@ -50,10 +49,9 @@ export default () => (
 )
 
 const Nav = styled.nav`
-  border-bottom: 2px solid #1ca086;
-
+  border-bottom: ${rhythm(1/15)} solid #1ca086;
 `
 
 const StyledLink = styled(Link)`
-  margin-right: 24px;
+  margin-right: ${rhythm(1)};
 `
