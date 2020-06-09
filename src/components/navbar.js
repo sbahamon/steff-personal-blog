@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
+import LightSwitch from "../components/lightswitch"
+
 
 import styled from "styled-components"
 import { rhythm } from "../utils/typography"
@@ -42,6 +44,7 @@ export default () => (
             <StyledLink to="/art/">
             Art
             </StyledLink>
+            <LightSwitch/>
         </Nav>
       </header>
     )}
