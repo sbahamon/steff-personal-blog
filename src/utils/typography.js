@@ -7,6 +7,7 @@ fairyGatesTheme.overrideThemeStyles = ( options) => ({
   a: {
     backgroundImage: "none",
     color: 'var(--textLink)',
+    textShadow: "none",
   },
   // gatsby-remark-autolink-headers - don't underline when hidden
   'a.anchor': {
