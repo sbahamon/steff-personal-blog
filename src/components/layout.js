@@ -10,7 +10,12 @@ class Layout extends React.Component {
     const { children } = this.props
 
     return (
-      <Wrapper>
+      <Wrapper
+      style={{
+        backgroundColor: 'var(--bg)',
+        color: 'var(--textNormal)',
+        transition: 'color 0.2s ease-out, background 0.2s ease-out',
+      }}>
         <div
           style={{
             marginLeft: `auto`,

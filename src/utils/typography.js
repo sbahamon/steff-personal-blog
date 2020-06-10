@@ -1,9 +1,23 @@
 import Typography from "typography"
 import fairyGatesTheme from 'typography-theme-fairy-gates'
+import './global.css'
+
 
 fairyGatesTheme.overrideThemeStyles = ( options) => ({
   a: {
     backgroundImage: "none",
+    color: 'var(--textLink)',
+  },
+  // gatsby-remark-autolink-headers - don't underline when hidden
+  'a.anchor': {
+    boxShadow: 'none',
+  },
+  // gatsby-remark-autolink-headers - use theme colours for the link icon
+  'a.anchor svg[aria-hidden="true"]': {
+    stroke: 'var(--textLink)',
+  },
+  hr: {
+    background: 'var(--hr)',
   }
 })
 

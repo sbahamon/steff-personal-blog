@@ -9,6 +9,7 @@ class LightSwitch extends React.Component {
           <label>
             <input
               type="checkbox"
+              aria-label="Switch light and dark mode"
               onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
               checked={theme === 'dark'}
             />{' '}
