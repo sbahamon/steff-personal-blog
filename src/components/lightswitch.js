@@ -6,7 +6,10 @@ class LightSwitch extends React.Component {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <label>
+          <label
+            style={{
+              float: "right"
+            }}>
             <input
               type="checkbox"
               aria-label="Switch light and dark mode"

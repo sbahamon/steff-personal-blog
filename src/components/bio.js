@@ -34,7 +34,7 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Chicago building useful things.
+              Written by <strong>{author}</strong> who lives and works in Chicago building and breaking.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow her on Twitter
