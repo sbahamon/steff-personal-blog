@@ -17,7 +17,6 @@ class IndexPage extends React.Component {
             👋
           </span>
         </h1>
-        <h2>Testing main branch switch</h2>
         <p>Welcome to my personal website.</p>
         <p>
           This is a collection of my personal projects, blogs, and other things I find useful or informative.
