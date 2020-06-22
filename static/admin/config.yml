@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: sbahamon/steff-personal-blog
+  branch: main
   # name: test-repo
 
 publish_mode: editorial_workflow
