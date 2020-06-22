@@ -52,7 +52,7 @@ export default () => (
 )
 
 const Nav = styled.nav`
-  border-bottom: ${rhythm(1/15)} solid #1ca086;
+  border-bottom: ${rhythm(1/15)} solid;
 `
 
 const StyledLink = styled(Link)`
